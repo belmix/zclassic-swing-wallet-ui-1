@@ -1,4 +1,4 @@
-# [ZClassic](https://http://zclassic.org/) Desktop GUI Wallet
+# [ZEN](https://http://zclassic.org/) Desktop GUI Wallet
 
 ## Graphical user interface wrapper for the [ZClassic](https://http://zclassic.org/) command line tools
 
