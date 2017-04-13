@@ -2,7 +2,7 @@
 
 ## Graphical user interface wrapper for the [Zen](https://zencash.io/) command line tools
 
-This program provides a Graphical User Interface (GUI) for the ZCash client tools that acts as a wrapper and 
+This program provides a Graphical User Interface (GUI) for the ZEN client tools that acts as a wrapper and 
 presents the information in a user-friendly manner.
 
 ![Screenshot](https://github.com/aicjofs/Zen-swing-wallet-ui/raw/master/docs/ZclassicWallet.png "Main Window")
@@ -29,7 +29,7 @@ use [Zen Desktop GUI Wallet - binary release v0.35-beta](https://github.com/aicj
 1. Operating system and tools
 
    As of November 2016 (Zen v1.0.0) this program is only intended to work on Linux 
-   (same limitation as [Zen](https://Zen.org/)). Future versions will work on MAC/Windows.  
+   (same limitation as [Zen](https://zencash.io/)). Future versions will work on MAC/Windows.  
    The Linux tools you need to build and run the Wallet GUI are Git, Java (JDK7 or later) and 
    Ant. If using Ubuntu Linux, they may be installed via command: 
    ```
@@ -71,12 +71,12 @@ use [Zen Desktop GUI Wallet - binary release v0.35-beta](https://github.com/aicj
 
   3.1. If you have built Zen from source code:
 
-   Assuming you have already built from source code [Zen](https://Zen.org/) in directory `/home/user/zcash/src` (for 
+   Assuming you have already built from source code [Zen](https://zencash.io/) in directory `/home/user/zcash/src` (for 
    example - this is the typical build dir. for ZCash v1.0.0) which contains the command line tools `zen-cli` 
    and `zend` you need to take the created file `./build/jars/ZenSwingWalletUI.jar` and copy it 
    to diretcory `/home/user/zcash/src` (the same dir. that contains `zen-cli` and `zend`). Example copy command:
    ```
-   user@ubuntu:~/build-dir/Zen-swing-wallet-ui$ cp ./build/jars/ZenSwingWalletUI.jar /home/user/zcash/src    
+   user@ubuntu:~/build-dir/Zen-swing-wallet-ui$ cp ./build/jars/ZenSwingWalletUI.jar /home/user/zen/src    
    ```
    
   3.2.(Not working) If you have installed the Zen [binary packages](https://github.com/zcash/zcash/wiki/Debian-binary-packages)
@@ -93,25 +93,21 @@ use [Zen Desktop GUI Wallet - binary release v0.35-beta](https://github.com/aicj
 
    Before running the GUI you need to start zend (e.g. `zend --daemon`). The wallet GUI is a Java program packaged 
    as an executable JAR file. It may be run from command line or started from another GUI tool (e.g. file manager). 
-   Assuming you have already installed [Zen](https://Zen.org/) and the GUI Wallet `ZenSwingWalletUI.jar` in 
+   Assuming you have already installed [Zen](https://zencash.io/) and the GUI Wallet `ZenSwingWalletUI.jar` in 
    directory `/home/user/zcash/src` one way to run it from command line is:
    ```
    user@ubuntu:~/build-dir/zcash-swing-wallet-ui$ java -jar /home/user/zcash/src/ZCashSwingWalletUI.jar
    ```
    If you are using Ubuntu (or similar ;) Linux you may instead just use the file manager and 
    right-click on the `ZenSwingWalletUI.jar` file and choose the option "Open with OpenJDK 8 Runtime". 
-   This will start the Zlassic GUI wallet.
+   This will start the Zen GUI wallet.
 
 ### Donations accepted
 At the present time this project is non-commercial in nature and developed by volunteers. If you find the GUI
 Wallet useful, please consider making a donation for its further development. Your contribution matters! Donations 
 are accepted at ZCash T address(for original program):
 ```
-t1VAggo7RusLVBzHSeYbGkxDQQhLZyigxty
-```
-and for the Zen mod at Zen T address:
 
-t1WuwBaUueitn5RW78H1aLiLij2o47sJFw1
 ```
 
 
