@@ -5,7 +5,7 @@
 This program provides a Graphical User Interface (GUI) for the ZEN client tools that acts as a wrapper and 
 presents the information in a user-friendly manner.
 
-![Screenshot](https://github.com/belmix/zen-swing-wallet-ui/blob/master/zen.png "Main Window")
+![Screenshot](https://raw.githubusercontent.com/belmix/zen-swing-wallet-ui/master/zen.png "Main Window")
 
 ## Building, installing and running the Wallet GUI
 
