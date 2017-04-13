@@ -51,7 +51,7 @@ import com.eclipsesource.json.WriterConfig;
 
 
 /**
- * Calls zcash-cli
+ * Calls zen-cli
  *
  * @author Ivan Vaklinov <ivan@vaklinov.com>
  */
@@ -100,18 +100,18 @@ public class ZCashClientCaller
 	{
 		// Detect daemon and client tools installation
 		File dir = new File(installDir);
-	    zcashcli = new File(dir, "zcash-cli");
+	    zcashcli = new File(dir, "zen-cli");
 
 		if (!zcashcli.exists())
 		{
-			zcashcli = OSUtil.findZCashCommand("zcash-cli");
+			zcashcli = OSUtil.findZCashCommand("zen-cli");
 		}
 
 		if ((zcashcli == null) || (!zcashcli.exists()))
 		{
 			throw new IOException(
 				"The ZCash installation directory " + installDir + " needs to contain " +
-				"the command line utilities zcashd and zcash-cli. zcash-cli is missing!");
+				"the command line utilities zend and zen-cli. zen-cli is missing!");
 		}
 	}
 
@@ -211,7 +211,7 @@ public class ZCashClientCaller
 	}
 
 
-	// ./src/zcash-cli listunspent only returns T addresses it seems
+	// ./src/zen-cli listunspent only returns T addresses it seems
 	public synchronized String[] getWalletPublicAddressesWithUnspentOutputs()
 		throws WalletCallException, IOException, InterruptedException
 	{
@@ -228,7 +228,7 @@ public class ZCashClientCaller
      }
 
 
-	// ./zcash-cli listreceivedbyaddress 0 true
+	// ./zen-cli listreceivedbyaddress 0 true
 	public synchronized String[] getWalletAllPublicAddresses()
 		throws WalletCallException, IOException, InterruptedException
 	{
@@ -492,7 +492,7 @@ public class ZCashClientCaller
 
 
     // Wallet locks check - an unencrypted wallet will give an error
-	// zcash-cli walletlock
+	// zen-cli walletlock
 	// error: {"code":-15,"message":"Error: running with an unencrypted wallet, but walletlock was called."}
 	public boolean isWalletEncrypted()
    		throws WalletCallException, IOException, InterruptedException
@@ -538,11 +538,11 @@ public class ZCashClientCaller
 	/**
 	 * Encrypts the wallet. Typical success/error use cases are:
 	 *
-	 * ./zcash-cli encryptwallet "1234"
+	 * ./zen-cli encryptwallet "1234"
 	 * wallet encrypted; Bitcoin server stopping, restart to run with encrypted wallet.
 	 * The keypool has been flushed, you need to make a new backup.
 	 *
-	 * ./zcash-cli encryptwallet "1234"
+	 * ./zen-cli encryptwallet "1234"
 	 * error: {"code":-15,"message":"Error: running with an encrypted wallet, but encryptwallet was called."}
 	 *
 	 * @param password

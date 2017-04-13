@@ -129,7 +129,7 @@ public class WalletOperations
 				JOptionPane.showMessageDialog(
 					this.parent, 
 					"An unexpected error occurred while encrypting the wallet!\n" +
-					"It is recommended to stop and restart both zcashd and the GUI wallet! \n" +
+					"It is recommended to stop and restart both zend and the GUI wallet! \n" +
 					"\n" + wce.getMessage().replace(",", ",\n"),
 					"Error in encrypting wallet...", JOptionPane.ERROR_MESSAGE);
 				return;
@@ -137,7 +137,7 @@ public class WalletOperations
 			
 			JOptionPane.showMessageDialog(
 				this.parent, 
-				"The wallet has been encrypted sucessfully and zcashd has stopped.\n" +
+				"The wallet has been encrypted sucessfully and zend has stopped.\n" +
 				"The GUI wallet will be stopped as well. Please restart both. In\n" +
 				"addtion the internal wallet keypool has been flushed. You need\n" +
 				"to make a new backup..." +
