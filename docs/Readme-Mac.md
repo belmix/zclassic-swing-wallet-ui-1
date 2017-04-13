@@ -3,7 +3,7 @@
 ZCash for Mac OS is not yet officially supported. Thanks to [@radix42](https://github.com/radix42) an experimental build has been provided.
 Before installing the GUI wallet on Mac OS you need to [install ZCash on Mac OS](https://github.com/radix42/zcash/blob/v1.0.3-mac-gcc/README-mac.md).
 Please follow the link for this. In case of any problems you may contact the developer for help ;-)
-For the rest of this document we assume that you have a ZCash node (zcashd) running on Mac OS...
+For the rest of this document we assume that you have a ZCash node (zend) running on Mac OS...
 
 ![Screenshot](https://github.com/vaklinov/zcash-swing-wallet-ui/raw/master/docs/ZCashWalletMac.png "ZCash on Mac")
 
@@ -38,14 +38,14 @@ For the rest of this document we assume that you have a ZCash node (zcashd) runn
 
    Assuming you have already built from source code [ZCash](https://z.cash/) in directory `/Users/joe/zcash/src` (for 
    example) you need to take the created file `./build/jars/ZCashSwingWalletUI.jar` and copy it 
-   to directory `/Users/joe/zcash/src` (the same dir. that contains `zcash-cli` and `zcashd`). Example copy command:
+   to directory `/Users/joe/zcash/src` (the same dir. that contains `zen-cli` and `zend`). Example copy command:
    ```
    cp ./build/jars/ZCashSwingWalletUI.jar /Users/joe/zcash/src    
    ```
 
 4. Running the installed ZCash GUI wallet
 
-   Before running the GUI you need to start zcashd (e.g. `zcashd --daemon`). The wallet GUI is a Java program packaged 
+   Before running the GUI you need to start zend (e.g. `zend --daemon`). The wallet GUI is a Java program packaged 
    as an executable JAR file. It may be run from command line or started from another GUI tool (e.g. file manager). 
    Assuming you have already installed [ZCash](https://z.cash/) and the GUI Wallet `ZCashSwingWalletUI.jar` in 
    directory `/Users/joe/zcash/src` one way to run it from command line is:
@@ -82,12 +82,12 @@ SOFTWARE.
 1. Limitation: Wallet encryption has been temporarily disabled in ZCash due to stability problems. A corresponding issue 
 [#1552](https://github.com/zcash/zcash/issues/1552) has been opened by the ZCash developers. Correspondingly
 wallet encryption has been temporarily disabled in the ZCash Desktop GUI Wallet.
-1. Issue: the GUI wallet does not work correctly if zcashd is started with a custom data directory, like:
-`zcashd -datadir=/home/data/whatever` This will be fixed in later versions.
+1. Issue: the GUI wallet does not work correctly if zend is started with a custom data directory, like:
+`zend -datadir=/home/data/whatever` This will be fixed in later versions.
 1. Issue: GUI data tables (transactions/addresses etc.) allow copying of data via double click but also allow editing. 
 The latter needs to be disabled. 
 1. Limitation: The list of transactions does not show all outgoing ones (specifically outgoing Z address 
 transactions). A corresponding issue [#1438](https://github.com/zcash/zcash/issues/1438) has been opened 
 for the ZCash developers - soon to be fixed. A fix for the GUI wallet may be expected within 1-2 weeks. 
-1. Limitation: The CPU percentage shown to be taken by zcashd is the average for the entire lifetime of the process. 
+1. Limitation: The CPU percentage shown to be taken by zend is the average for the entire lifetime of the process. 
 This is not very useful. This will be improved in future versions.
