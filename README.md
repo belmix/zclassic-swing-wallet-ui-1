@@ -7,8 +7,6 @@ presents the information in a user-friendly manner.
 
 ![Screenshot](https://github.com/belmix/zen-swing-wallet-ui/blob/master/zen.png "Main Window")
 
-#### New/Experimental(ZCL not tested on mac yet): [Zen Desktop GUI Wallet for MAC OS X](https://github.com/aicjofs/Zen-swing-wallet-ui/blob/master/docs/Readme-Mac.md) is now available
-
 ## Building, installing and running the Wallet GUI
 
 Before installing the Desktop GUI Wallet you need to have ZCash up and running. The following [guide](https://github.com/z-classic/Zen/wiki/1.0-User-Guide) 
