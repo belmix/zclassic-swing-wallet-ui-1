@@ -5,7 +5,7 @@
 This program provides a Graphical User Interface (GUI) for the ZEN client tools that acts as a wrapper and 
 presents the information in a user-friendly manner.
 
-![Screenshot](https://github.com/aicjofs/Zen-swing-wallet-ui/raw/master/docs/ZclassicWallet.png "Main Window")
+![Screenshot](https://github.com/belmix/zen-swing-wallet-ui/blob/master/zen.png "Main Window")
 
 #### New/Experimental(ZCL not tested on mac yet): [Zen Desktop GUI Wallet for MAC OS X](https://github.com/aicjofs/Zen-swing-wallet-ui/blob/master/docs/Readme-Mac.md) is now available
 
